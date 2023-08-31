@@ -4,14 +4,26 @@ git의 저장 방식
 stage에 변경사항을 올리는 방법
   git add 파일이름
 
-day02 폴더 : git repository
+1. day02 폴더 : git repository
   day02.txt : 새로 만든 파일(untracked 상태)
                             (unstaged 상태)
 
-git add day02.txt
-  day02.txt : 
-  (staged 상태)(tracked 상태)
+2. git add day02.txt
+  day02.txt : 추적 가능(tracked 상태)
+              임시저장(staged 상태)
+==============================================================
+stage에 올려진 임시저장된 파일들만 영구저장(commit)된다.
+(수정 -> add -> commit)
 
-day02.txt 수정
+3. day02.txt 수정
   day02.txt : modified 상태(tracked 상태)
                           (unstaged 상태)
+
+4. git add day02.txt
+  day02.txt : 추적 가능(tracked 상태)
+              임시저장(staged 상태)
+
+5. git commit
+  영구저장
+===============================================================
+git restore ... -> 수정 전 마지막 영구저장 상태로 되돌림

@@ -39,3 +39,7 @@ stage에 모든 파일 올리기
 commit 하면서 동시에 메시지를 작성하는 옵션
   -m
     git commit -m '메시지'
+
+commit 하면서 add 하는 옵션
+  -a
+    git commit -a

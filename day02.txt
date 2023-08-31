@@ -85,7 +85,8 @@ github -> 원격 repository
 
 원격 repository에 브랜치 업로드
   git push origin(별명) (브랜치 이름)
-  
+
   -u 옵션
     로컬 repository 브랜치와 원격 repository 브랜치를 연결하는 옵션
-    최초 1회 설정하면, 그 이후부터는 자동으로 연결된 원격 repository에 업로드된다.
+    최초 1회 설정하면(git push -u origin 브랜치 이름),
+    그 이후부터는 자동으로 연결된 원격 repository에 업로드된다.(git push)

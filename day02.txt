@@ -25,5 +25,17 @@ stage에 올려진 임시저장된 파일들만 영구저장(commit)된다.
 
 5. git commit
   영구저장
+  vi 에디터
+    i -> 메시지 입력 -> esc -> :wq
 ===============================================================
-git restore ... -> 수정 전 마지막 영구저장 상태로 되돌림
+untracked
+  새롭게 만든 파일은 untracked
+tracked
+  한번이라도 stage에 올라갔고, commit이 되었으면 staged
+
+stage에 모든 파일 올리기
+  git add .
+
+commit 하면서 동시에 메시지를 작성하는 옵션
+  -m
+    git commit -m '메시지'

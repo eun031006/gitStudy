@@ -83,7 +83,7 @@ github -> 원격 repository
 로컬 repository와 원격 repository를 연결
   git remote add origin(별명) (원격 저장소 주소)
 
-원격 repository에 브랜치 업로드(로컬->원격)
+***원격 repository에 브랜치 업로드(로컬->원격)
   git push origin(별명) (브랜치 이름)
 
   -u 옵션
@@ -91,8 +91,11 @@ github -> 원격 repository
     최초 1회 설정하면(git push -u origin 브랜치 이름),
     그 이후부터는 자동으로 연결된 원격 repository에 업로드된다.(git push)
 
-원격 repository에 있는 파일을 로컬 repository에 다운로드(원격->로컬)
+***원격 repository에 있는 파일을 로컬 repository에 다운로드(원격->로컬)
   git pull origin(별명) (브랜치 이름)
 
+로컬에서 수정 후 원격에서 pull 할 때
+  push 후 수정 - (나의 수정 내용)add, commit - pull => 병합된다.
+  
   원격 repository에 push 후 로컬 repository에서 수정한 내용은
   pull 한 후에도, 로컬 repository에 그대로 남아있음(즉, 원격 repository 내용으로 바뀌지 않음)
